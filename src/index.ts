@@ -1,1 +1,1 @@
-export * from './lib';
+export { Button } from './lib';

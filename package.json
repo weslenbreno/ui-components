@@ -1,11 +1,9 @@
 {
   "name": "@col-ui/components",
-  "private": true,
-  "version": "1.0.0",
+  "version": "1.0.7",
   "type": "module",
-  "module": "dist/components.esm.js",
   "types": "dist/components.cjs.d.ts",
-  "main": "dist/components.js",
+  "main": "dist/components.umd.js",
   "source": "src/index.ts",
   "files": [
     "dist"
@@ -14,7 +12,7 @@
     "dev": "vite",
     "build": "tsc --p ./tsconfig.build.json && vite build",
     "test": "jest",
-    "coverage": "jest run --coverage",
+    "coverage": "jest --coverage",
     "lint": "eslint ./src --ext ts,tsx",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
@@ -81,7 +79,11 @@
     "ts-jest": "^29.1.2",
     "typescript": "5.2.2",
     "vite": "5.2.0",
-    "vite-plugin-dts": "^3.8.3"
+    "vite-plugin-dts": "^3.8.3",
+    "vite-plugin-lib-inject-css": "^2.0.1"
   },
-  "packageManager": "yarn@4.1.1"
+  "packageManager": "yarn@4.1.1",
+  "publishConfig": {
+    "registry": "http://localhost:4873/"
+  }
 }
