@@ -5,6 +5,7 @@
   "types": "dist/components.cjs.d.ts",
   "main": "dist/components.umd.js",
   "source": "src/index.ts",
+  "private": true,
   "files": [
     "dist"
   ],
@@ -16,8 +17,7 @@
     "lint": "eslint ./src --ext ts,tsx",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "prepare": "husky install"
+    "build-storybook": "storybook build"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
