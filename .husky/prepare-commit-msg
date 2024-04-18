@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-exec < /dev/tty && yarn cz --hook || true
+exec < /dev/tty && yarn commit --hook || true
