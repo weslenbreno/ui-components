@@ -1,7 +1,7 @@
 module.exports = {
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
-  coverageDirectory: '<rootDir>/reports/',
+  coverageDirectory: '<rootDir>/coverage/',
   clearMocks: true,
   coverageReporters: ['cobertura', 'html', 'lcov', 'text-summary', 'text'],
   coverageThreshold: {
