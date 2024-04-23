@@ -29,7 +29,7 @@ jobs:
       - name: Install Dependencies
         run: yarn
 
-      - name: Release
+      - name: Semantic Release
         env:
           GITHUB_TOKEN: ${{ secrets.SEMANTIC_TOKEN }}
         run: yarn semantic-release
