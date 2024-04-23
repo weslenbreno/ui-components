@@ -26,4 +26,6 @@ jobs:
         run: yarn
 
       - name: Semantic Release
-        run: yarn semantic-release
+        uses: cycjimmy/semantic-release-action@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.SEMANTIC_TOKEN }}
