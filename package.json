@@ -1,6 +1,6 @@
 {
   "name": "@col-ui/components",
-  "version": "1.0.7",
+  "version": "1.0.0",
   "type": "module",
   "types": "dist/components.cjs.d.ts",
   "main": "dist/components.umd.js",
