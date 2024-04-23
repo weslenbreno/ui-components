@@ -1,23 +1,23 @@
 module.exports = {
-  branches: ["master", { name: "develop", prerelease: true }],
+  branches: ['master', { name: 'develop', prerelease: true }],
   plugins: [
-    "@semantic-release/commit-analyzer",
-    "@semantic-release/release-notes-generator",
-    "@semantic-release/changelog",
+    '@semantic-release/commit-analyzer',
+    '@semantic-release/release-notes-generator',
+    '@semantic-release/changelog',
     [
-      "@semantic-release/npm",
+      '@semantic-release/npm',
       {
-        npmPublish: false
-      }
+        npmPublish: false,
+      },
     ],
     [
-      "@semantic-release/git",
+      '@semantic-release/git',
       {
-        assets: ["dist/", "package.json", "CHANGELOG.md"],
-        message: "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-      }
+        assets: ['dist/', 'package.json', 'CHANGELOG.md'],
+        message: 'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
+      },
     ],
-    "@semantic-release/github"
+    '@semantic-release/github',
   ],
-  repositoryUrl: "https://github.com/your_repository"
-}
+  repositoryUrl: 'https://github.com/weslenbreno/col-ui-components',
+};
